@@ -3,7 +3,7 @@ FROM debian:jessie
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 
-RUN mkdir /docker-entrypoint-initdb.d
+# RUN mkdir /docker-entrypoint-initdb.d
 
 # FATAL ERROR: please install the following Perl modules before executing /usr/local/mysql/scripts/mysql_install_db:
 # File::Basename
